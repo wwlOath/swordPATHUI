@@ -1,0 +1,1431 @@
+@-webkit-keyframes ui-spinner-rotate-right {
+    0% {
+        -webkit-transform: rotate(0)
+    }
+
+    25% {
+        -webkit-transform: rotate(180deg)
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg)
+    }
+
+    75% {
+        -webkit-transform: rotate(360deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes ui-spinner-rotate-left {
+    0% {
+        -webkit-transform: rotate(0)
+    }
+
+    25% {
+        -webkit-transform: rotate(0)
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg)
+    }
+
+    75% {
+        -webkit-transform: rotate(180deg)
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes ui-spinner-rotate-right {
+    0% {
+        -moz-transform: rotate(0)
+    }
+
+    25% {
+        -moz-transform: rotate(180deg)
+    }
+
+    50% {
+        -moz-transform: rotate(180deg)
+    }
+
+    75% {
+        -moz-transform: rotate(360deg)
+    }
+
+    100% {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes ui-spinner-rotate-left {
+    0% {
+        -moz-transform: rotate(0)
+    }
+
+    25% {
+        -moz-transform: rotate(0)
+    }
+
+    50% {
+        -moz-transform: rotate(180deg)
+    }
+
+    75% {
+        -moz-transform: rotate(180deg)
+    }
+
+    100% {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+@keyframes ui-spinner-rotate-right {
+    0% {
+        transform: rotate(0)
+    }
+
+    25% {
+        transform: rotate(180deg)
+    }
+
+    50% {
+        transform: rotate(180deg)
+    }
+
+    75% {
+        transform: rotate(360deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes ui-spinner-rotate-left {
+    0% {
+        transform: rotate(0)
+    }
+
+    25% {
+        transform: rotate(0)
+    }
+
+    50% {
+        transform: rotate(180deg)
+    }
+
+    75% {
+        transform: rotate(180deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.messenger-spinner {
+    position: relative;
+    border-radius: 100%
+}
+
+ul.messenger.messenger-spinner-active .messenger-spinner .messenger-spinner {
+    display: block
+}
+
+.messenger-spinner .messenger-spinner-side {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute
+}
+
+.messenger-spinner .messenger-spinner-side .messenger-spinner-fill {
+    border-radius: 999px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -ms-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear
+}
+
+.messenger-spinner .messenger-spinner-side-left {
+    left: 0
+}
+
+.messenger-spinner .messenger-spinner-side-left .messenger-spinner-fill {
+    left: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    -webkit-animation-name: ui-spinner-rotate-left;
+    -moz-animation-name: ui-spinner-rotate-left;
+    -ms-animation-name: ui-spinner-rotate-left;
+    -o-animation-name: ui-spinner-rotate-left;
+    animation-name: ui-spinner-rotate-left;
+    -webkit-transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    -o-transform-origin: 0 50%;
+    transform-origin: 0 50%
+}
+
+.messenger-spinner .messenger-spinner-side-right {
+    left: 50%
+}
+
+.messenger-spinner .messenger-spinner-side-right .messenger-spinner-fill {
+    left: -100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    -webkit-animation-name: ui-spinner-rotate-right;
+    -moz-animation-name: ui-spinner-rotate-right;
+    -ms-animation-name: ui-spinner-rotate-right;
+    -o-animation-name: ui-spinner-rotate-right;
+    animation-name: ui-spinner-rotate-right;
+    -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
+    transform-origin: 100% 50%
+}
+
+ul.messenger-theme-flat {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    background: #404040
+}
+
+ul.messenger-theme-flat.messenger-empty {
+    display: none
+}
+
+ul.messenger-theme-flat .messenger-message {
+    -webkit-box-shadow: inset 0 1px rgba(255,255,255,.13),inset 48px 0 0 #292929;
+    -moz-box-shadow: inset 0 1px rgba(255,255,255,.13),inset 48px 0 0 #292929;
+    box-shadow: inset 0 1px rgba(255,255,255,.13),inset 48px 0 0 #292929;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    position: relative;
+    border: 0;
+    margin-bottom: 0;
+    font-size: 13px;
+    background: 0 0;
+    color: #f0f0f0;
+    font-weight: 500;
+    padding: 10px 30px 10px 65px
+}
+
+ul.messenger-theme-flat .messenger-message .messenger-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #888;
+    opacity: 1;
+    font-weight: 700;
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 8px 10px 7px 7px;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    -webkit-appearance: none
+}
+
+ul.messenger-theme-flat .messenger-message .messenger-close:hover {
+    color: #bbb
+}
+
+ul.messenger-theme-flat .messenger-message .messenger-close:active {
+    color: #777
+}
+
+ul.messenger-theme-flat .messenger-message .messenger-actions {
+    float: none;
+    margin-top: 10px
+}
+
+ul.messenger-theme-flat .messenger-message .messenger-actions a {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #aaa;
+    background: #2e2e2e;
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    padding: 4px 11px 6px;
+    text-transform: capitalize
+}
+
+ul.messenger-theme-flat .messenger-message .messenger-actions a:hover {
+    color: #f0f0f0;
+    background: #2e2e2e
+}
+
+ul.messenger-theme-flat .messenger-message .messenger-actions a:active {
+    background: #292929;
+    color: #aaa
+}
+
+ul.messenger-theme-flat .messenger-message .messenger-actions .messenger-phrase {
+    display: none
+}
+
+ul.messenger-theme-flat .messenger-message .messenger-message-inner:before {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    display: block;
+    content: " ";
+    top: 50%;
+    margin-top: -8px;
+    height: 13px;
+    width: 13px;
+    z-index: 20
+}
+
+ul.messenger-theme-flat .messenger-message.alert-success .messenger-message-inner:before {
+    background: #5fca4a
+}
+
+ul.messenger-theme-flat .messenger-message.alert-info .messenger-message-inner:before {
+    background: #61c4b8
+}
+
+ul.messenger-theme-flat .messenger-message.alert-error .messenger-message-inner:before {
+    background: #dd6a45
+}
+
+ul.messenger-theme-flat .messenger-message.alert-error.messenger-retry-soon .messenger-spinner {
+    width: 32px;
+    height: 32px;
+    background: 0 0
+}
+
+ul.messenger-theme-flat .messenger-message.alert-error.messenger-retry-soon .messenger-spinner .messenger-spinner-side .messenger-spinner-fill {
+    background: #dd6a45;
+    -webkit-animation-duration: 20s;
+    -moz-animation-duration: 20s;
+    -ms-animation-duration: 20s;
+    -o-animation-duration: 20s;
+    animation-duration: 20s;
+    opacity: 1
+}
+
+ul.messenger-theme-flat .messenger-message.alert-error.messenger-retry-soon .messenger-spinner:after {
+    content: "";
+    background: #292929;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    display: block
+}
+
+ul.messenger-theme-flat .messenger-message.alert-error.messenger-retry-later .messenger-spinner {
+    width: 32px;
+    height: 32px;
+    background: 0 0
+}
+
+ul.messenger-theme-flat .messenger-message.alert-error.messenger-retry-later .messenger-spinner .messenger-spinner-side .messenger-spinner-fill {
+    background: #dd6a45;
+    -webkit-animation-duration: 600s;
+    -moz-animation-duration: 600s;
+    -ms-animation-duration: 600s;
+    -o-animation-duration: 600s;
+    animation-duration: 600s;
+    opacity: 1
+}
+
+ul.messenger-theme-flat .messenger-message.alert-error.messenger-retry-later .messenger-spinner:after {
+    content: "";
+    background: #292929;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    display: block
+}
+
+ul.messenger-theme-flat .messenger-message-slot:first-child .messenger-message {
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -ms-border-radius: 4px 4px 0 0;
+    -o-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    -webkit-box-shadow: inset 48px 0 0 #292929;
+    -moz-box-shadow: inset 48px 0 0 #292929;
+    box-shadow: inset 48px 0 0 #292929
+}
+
+ul.messenger-theme-flat .messenger-message-slot.messenger-first .messenger-message {
+    -webkit-border-radius: 0 0 4px 4px;
+    -moz-border-radius: 0 0 4px 4px;
+    -ms-border-radius: 0 0 4px 4px;
+    -o-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+    -webkit-box-shadow: inset 0 1px rgba(255,255,255,.13),inset 48px 0 0 #292929;
+    -moz-box-shadow: inset 0 1px rgba(255,255,255,.13),inset 48px 0 0 #292929;
+    box-shadow: inset 0 1px rgba(255,255,255,.13),inset 48px 0 0 #292929
+}
+
+ul.messenger-theme-flat .messenger-message-slot.messenger-first:first-child .messenger-message {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 48px 0 0 #292929;
+    -moz-box-shadow: inset 48px 0 0 #292929;
+    box-shadow: inset 48px 0 0 #292929
+}
+
+ul.messenger-theme-flat .messenger-spinner {
+    display: block;
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    margin-top: -18px;
+    z-index: 999;
+    height: 32px;
+    width: 32px;
+    z-index: 10
+}
+
+ul.messenger {
+    margin: 0;
+    padding: 0
+}
+
+ul.messenger>li {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+ul.messenger.messenger-empty {
+    display: none
+}
+
+ul.messenger .messenger-message {
+    overflow: hidden
+}
+
+ul.messenger .messenger-message.messenger-hidden {
+    display: none
+}
+
+ul.messenger .messenger-message .messenger-actions a,ul.messenger .messenger-message .messenger-phrase {
+    padding-right: 5px
+}
+
+ul.messenger .messenger-message .messenger-actions {
+    float: right
+}
+
+ul.messenger .messenger-message .messenger-actions a {
+    cursor: pointer;
+    text-decoration: underline
+}
+
+ul.messenger .messenger-message ol,ul.messenger .messenger-message ul {
+    margin: 10px 18px 0
+}
+
+ul.messenger.messenger-fixed {
+    position: fixed;
+    z-index: 10000
+}
+
+ul.messenger.messenger-fixed .messenger-message {
+    min-width: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+ul.messenger.messenger-fixed .message .messenger-actions {
+    float: left
+}
+
+ul.messenger.messenger-fixed.messenger-on-top {
+    top: 20px
+}
+
+ul.messenger.messenger-fixed.messenger-on-bottom {
+    bottom: 20px
+}
+
+ul.messenger.messenger-fixed.messenger-on-bottom,ul.messenger.messenger-fixed.messenger-on-top {
+    left: 50%;
+    width: 800px;
+    margin-left: -400px
+}
+
+@media (max-width: 960px) {
+    ul.messenger.messenger-fixed.messenger-on-bottom,ul.messenger.messenger-fixed.messenger-on-top {
+        left:10%;
+        width: 80%;
+        margin-left: 0
+    }
+}
+
+ul.messenger.messenger-fixed.messenger-on-bottom.messenger-on-right,ul.messenger.messenger-fixed.messenger-on-top.messenger-on-right {
+    right: 20px;
+    left: auto
+}
+
+ul.messenger.messenger-fixed.messenger-on-bottom.messenger-on-left,ul.messenger.messenger-fixed.messenger-on-top.messenger-on-left {
+    left: 20px;
+    margin-left: 0
+}
+
+ul.messenger.messenger-fixed.messenger-on-left,ul.messenger.messenger-fixed.messenger-on-right {
+    width: 350px
+}
+
+ul.messenger.messenger-fixed.messenger-on-left .messenger-actions,ul.messenger.messenger-fixed.messenger-on-right .messenger-actions {
+    float: left
+}
+
+ul.messenger .messenger-spinner {
+    display: none
+}
+
+.bootstrap-tagsinput {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    display: inline-block;
+    padding: 4px 6px;
+    color: #555;
+    vertical-align: middle;
+    border-radius: 4px;
+    max-width: 100%;
+    line-height: 22px;
+    cursor: text
+}
+
+.bootstrap-tagsinput input {
+    border: none;
+    box-shadow: none;
+    outline: 0;
+    background-color: transparent;
+    padding: 0 6px;
+    margin: 0;
+    width: auto;
+    max-width: inherit
+}
+
+.bootstrap-tagsinput.form-control input::-moz-placeholder {
+    color: #777;
+    opacity: 1
+}
+
+.bootstrap-tagsinput.form-control input:-ms-input-placeholder {
+    color: #777
+}
+
+.bootstrap-tagsinput.form-control input::-webkit-input-placeholder {
+    color: #777
+}
+
+.bootstrap-tagsinput input:focus {
+    border: none;
+    box-shadow: none
+}
+
+.bootstrap-tagsinput .tag {
+    margin-right: 2px;
+    color: #fff
+}
+
+.bootstrap-tagsinput .tag [data-role=remove] {
+    margin-left: 8px;
+    cursor: pointer
+}
+
+.bootstrap-tagsinput .tag [data-role=remove]:after {
+    content: "x";
+    padding: 0 2px
+}
+
+.bootstrap-tagsinput .tag [data-role=remove]:hover {
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05)
+}
+
+.bootstrap-tagsinput .tag [data-role=remove]:hover:active {
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
+}
+
+.bootstrap-tagsinput {
+    display: block
+}
+
+.bootstrap-tagsinput .tag.label {
+    font-size: 100%
+}
+
+.bootstrap-tagsinput .tag {
+    display: inline-block!important
+}
+
+.bootstrap-tagsinput span[data-role=remove] {
+    opacity: 0;
+    filter: (Opacity=0)
+}
+
+.bootstrap-tagsinput .tag:hover span[data-role=remove] {
+    opacity: 1;
+    filter: (Opacity=100)
+}
+
+.bootstrap-tagsinput.disabled span[data-role=remove] {
+    display: none
+}
+
+.tt-hint,.tt-query,.typeahead {
+    width: 396px;
+    height: 22px;
+    padding: 8px 12px;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    outline: 0
+}
+
+.typeahead {
+    background-color: #fff
+}
+
+.typeahead:focus {
+    border: 2px solid #0097cf
+}
+
+.tt-query {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075)
+}
+
+.tt-hint {
+    color: #999
+}
+
+.tt-menu {
+    min-width: 256px;
+    max-width: 100%;
+    margin-top: 4px;
+    padding: 8px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    z-index: 9999
+}
+
+.tt-suggestion {
+    padding: 3px 20px;
+    line-height: 24px
+}
+
+.tt-suggestion.tt-cursor,.tt-suggestion:focus,.tt-suggestion:hover {
+    color: #fff;
+    background-color: #0097cf;
+    background: #f6f5f2;
+    color: #333
+}
+
+.tt-suggestion p {
+    margin: 0
+}
+
+.gist {
+    font-size: 14px
+}
+
+.tt-menu {
+    padding: 0;
+    margin-bottom: 10px
+}
+
+.tt-dataset {
+    border-top: 1px rgba(0,0,0,.1) solid
+}
+
+.tt-menu .tt-dataset:first-child {
+    border-top: 0
+}
+
+.tt-dataset .tt-dataset-header {
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 5px 20px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 700
+}
+
+.tt-dataset-header .add {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -.7em
+}
+
+.tt-dataset-header .btn.disabled {
+    opacity: .8
+}
+
+.twitter-typeahead.unexpanded .tt-dataset-stains_group .tt-suggestion {
+    display: none
+}
+
+.twitter-typeahead .tt-dataset-header .closed {
+    display: none
+}
+
+.twitter-typeahead.unexpanded .tt-dataset-header .opened {
+    display: none
+}
+
+.twitter-typeahead.unexpanded .tt-dataset-header .closed {
+    display: inline-block
+}
+
+.tt-dataset-header .closed,.tt-dataset-header .opened {
+    float: right
+}
+
+.tt-dataset-stains_group .tt-dataset-header {
+    cursor: pointer
+}
+
+.opened.arrow:before {
+    content: '∧'
+}
+
+.closed.arrow:before {
+    content: '∨'
+}
+
+.tt-dataset {
+    max-height: 300px;
+    overflow-y: auto
+}
+
+.tt-dataset .tt-dataset-header {
+    float: left;
+    width: 100%
+}
+
+.tt-dataset-header+.tt-suggestion {
+    margin-top: 32px
+}
+
+.text-over {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+@keyframes loopRotate {
+    from {
+        transform: rotate(0)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes loopRotate {
+    from {
+        -moz-transform: rotate(0)
+    }
+
+    to {
+        -moz-transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes loopRotate {
+    from {
+        -webkit-transform: rotate(0)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-o-keyframes loopRotate {
+    from {
+        -o-transform: rotate(0)
+    }
+
+    to {
+        -o-transform: rotate(360deg)
+    }
+}
+
+.dsm-host .edit {
+    padding: 10px;
+    border: 1px #ccc solid;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    z-index: 1;
+    background: #fff;
+    position: absolute
+}
+
+.dsm-host .edit>div:first-child {
+    position: relative
+}
+
+.dsm-host .dropdown-menu>li>a {
+    padding: 0 6px
+}
+
+.dsm-host input {
+    border: 1px #ccc solid;
+    padding: 2px;
+    width: 180px;
+    font-size: 100%;
+    border-radius: 0;
+    vertical-align: middle
+}
+
+.dsm-host input:FOCUS {
+    outline: 0
+}
+
+.dsm-host .mgroup-addon {
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 2px;
+    margin-right: -3px;
+    border: 1px #ccc solid;
+    border-right: 0;
+    line-height: inherit;
+    opacity: 1
+}
+
+.dsm-host .btn-save {
+    margin-left: -3px;
+    border-left-style: none
+}
+
+.dsm-host .icon-refresh {
+    animation: loopRotate 1s infinite;
+    -moz-animation: loopRotate 1s infinite;
+    -webkit-animation: loopRotate 1s infinite;
+    -ms-animation-duration: loopRotate 1s infinite;
+    -o-animation: loopRotate 1s infinite
+}
+
+.s-error,.s-refresh {
+    margin-bottom: -6px;
+    padding-top: 6px;
+    padding-left: 15px
+}
+
+.s-error>i,.s-refresh>i {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -15px
+}
+
+.s-error {
+    color: red
+}
+
+.attachment {
+    border: 1px solid #eee;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    width: 120px;
+    height: 146px;
+    position: relative
+}
+
+.attachment.add {
+    display: table;
+    position: relative;
+    opacity: .9
+}
+
+.attachment.add:HOVER {
+    color: #b54321;
+    border-color: #b54321;
+    opacity: 1
+}
+
+.attachment.add.disabled:HOVER {
+    color: inherit;
+    cursor: inherit;
+    opacity: .9;
+    border: 1px solid #eee
+}
+
+.attachment.add>div {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.attachment.add>input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer
+}
+
+.attachment.add i {
+    font-size: 50px
+}
+
+.attachment-icon {
+    background: url(img/attachment.png) no-repeat;
+    background-position: -11px 2px;
+    margin: 10px auto;
+    height: 102px;
+    width: 78px
+}
+
+.attachment-tools,div.attachment.delete .attachment-tools {
+    display: none
+}
+
+.attachment:HOVER .attachment-tools {
+    display: block
+}
+
+.attachment-tools i {
+    background: #777;
+    font-size: 20px;
+    float: right;
+    width: 26px;
+    color: #f5f5f5;
+    padding: 2px 4px;
+    opacity: .7
+}
+
+.attachment-tools i:HOVER {
+    background: #b54321;
+    cursor: pointer;
+    opacity: .9
+}
+
+.attachment-undelete {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: table
+}
+
+.attachment-undelete>div {
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle
+}
+
+.attachment-undelete>div:FIRST-CHILD {
+    position: absolute;
+    background: #000;
+    opacity: .3
+}
+
+.attachment-undelete .undelete {
+    background: rgba(181,67,33,.8);
+    cursor: pointer;
+    font-size: 35px;
+    border-radius: 50%;
+    padding: 5px;
+    color: #fff
+}
+
+.attachment-icon.pdf {
+    background-position: -111px 2px
+}
+
+.attachment-icon.doc,.attachment-icon.docx {
+    background-position: -212px 2px
+}
+
+.attachment-icon.ppt,.attachment-icon.pptx {
+    background-position: -312px 2px
+}
+
+.attachment-icon.xls,.attachment-icon.xlsx {
+    background-position: -412px 2px
+}
+
+.attachment-icon.dcm {
+    background-position: -512px 2px
+}
+
+.attachment-icon.ini,.attachment-icon.log,.attachment-icon.txt {
+    background-position: -613px 2px
+}
+
+.attachment-icon.bmp,.attachment-icon.gif,.attachment-icon.jpeg,.attachment-icon.jpg,.attachment-icon.png,.attachment-icon.tif,.attachment-icon.tiff {
+    background-position: -714px 2px
+}
+
+.attachment-icon.avi,.attachment-icon.mp4,.attachment-icon.mpeg,.attachment-icon.mpg,.attachment-icon.rm,.attachment-icon.rmvb,.attachment-icon.wmv {
+    background-position: -814px 2px
+}
+
+.attachment-icon.mp3,.attachment-icon.wma {
+    background-position: -914px 2px
+}
+
+.attachment-icon.rar {
+    background-position: -1114px 2px
+}
+
+.attachment-icon.zip {
+    background-position: -1214px 2px
+}
+
+.attachment-min {
+    width: 200px;
+    float: left;
+    margin: 0 5px 5px 0;
+    border: 1px solid #f3f3f3;
+    position: relative;
+    padding: 4px 6px
+}
+
+.attachment-icon-min {
+    width: 40px;
+    height: 40px;
+    background: url(img/attachment-min.png) no-repeat;
+    background-position: -252px 1px
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+    .attachment-icon-min {
+        background:url(img/attachment-min-res.png) no-repeat;
+        background-size: 336px 40px;
+        background-position: -252px 1px
+    }
+}
+
+.attachment-icon-min.pdf {
+    background-position: 0 1px
+}
+
+.attachment-icon-min.bmp,.attachment-icon-min.gif,.attachment-icon-min.jpeg,.attachment-icon-min.jpg,.attachment-icon-min.png,.attachment-icon-min.tif,.attachment-icon-min.tiff {
+    background-position: -42px 1px
+}
+
+.attachment-icon-min.doc,.attachment-icon-min.docx {
+    background-position: -84px 1px
+}
+
+.attachment-icon-min.xls,.attachment-icon-min.xlsx {
+    background-position: -126px 1px
+}
+
+.attachment-icon-min.ppt,.attachment-icon-min.pptx {
+    background-position: -168px 1px
+}
+
+.attachment-icon-min.ini,.attachment-icon-min.log,.attachment-icon-min.txt {
+    background-position: -210px 1px
+}
+
+.attachment-icon-min.dcm {
+    background-position: -294px 1px
+}
+
+.attachment-name-min {
+    margin-left: 46px;
+    margin-top: -40px
+}
+
+.attachment-min>a>i,.attachment-min>i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .5;
+    margin: 2px 4px;
+    cursor: pointer;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAHlBMVEVHcExQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBRUVFD3W/uAAAACXRSTlMAgNBgEHAgUJD6Tq2KAAAATElEQVQY06XOSQ6AMAxD0QzukPtfmJgKaFiwwYtK/0mRKrLWmtSp/oGOB9DzGYYLYIPsFALM1xEl4e5TVLemzLl3SoTXf/irv2ZRZgdnhwE7EEHa9QAAAABJRU5ErkJggg==);
+    background-size: cover;
+    min-width: 12px;
+    min-height: 12px
+}
+
+.attachment-min>i:hover {
+    opacity: .9
+}
+
+.attachment-min.add {
+    height: 54px
+}
+
+.attachment-min.add>input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer
+}
+
+.attachment-min.add>.attachment-icon-min {
+    font-size: 40px;
+    opacity: .5;
+    background: 0 0;
+    padding-top: 1px;
+    padding-left: 3px
+}
+
+.attachment-min button.close {
+    top: 0;
+    right: 0;
+    padding: 0 4px;
+    position: absolute
+}
+
+.attachment-undelete-min {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center
+}
+
+.attachment-undelete-min>div {
+    background: #000;
+    opacity: .2;
+    height: 100%
+}
+
+.attachment-undelete-min>i {
+    background: #b54321;
+    padding: 5px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 35px;
+    top: 3px;
+    left: 50%;
+    position: absolute;
+    margin-left: -17px;
+    cursor: pointer;
+    opacity: .9
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    display: table;
+    border: 1px solid #eee
+}
+
+.avatar>div {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle
+}
+
+.avatar>div>img {
+    max-width: 58px;
+    max-height: 58px
+}
+
+.fileViewer {
+    overflow: hidden
+}
+
+.fileViewer .modal-dialog {
+    width: 95%;
+    margin: 10px auto
+}
+
+@media (min-width: 720px) {
+    .fileViewer .modal-dialog {
+        margin:30px auto;
+        padding: 0
+    }
+}
+
+.fileViewer .modal-header {
+    padding: 0 15px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+    opacity: .9
+}
+
+.fileViewer .modal-body {
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+    width: 100%
+}
+
+.fileViewer .modal-body .loading {
+    background: url(img/loading.gif) center/200px;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -26px
+}
+
+.fileViewer .modal-body iframe {
+    position: relative
+}
+
+.fileViewer .t-left {
+    position: absolute;
+    top: 50%;
+    margin-left: 8px
+}
+
+.fileViewer .t-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-right: 8px
+}
+
+.fileViewer .t-left a,.fileViewer .t-right a {
+    padding: 0;
+    border: 0;
+    opacity: .85
+}
+
+.fileViewer .btn-vw {
+    color: #000!important;
+    display: inline-block;
+    padding: 0;
+    background: #fff;
+    border: 0;
+    opacity: .2
+}
+
+.fileViewer .btn-vw:focus,.fileViewer .btn-vw:hover {
+    opacity: .7
+}
+
+.fileViewer .modal-title {
+    display: inline-block;
+    margin: 0 30px;
+    height: 48px;
+    line-height: 48px;
+    position: relative;
+    top: 3px
+}
+
+.fileViewer .hclose {
+    margin-top: 8px!important;
+    font-size: 32px
+}
+
+.header-overele {
+    position: absolute;
+    height: 24px;
+    z-index: 20;
+    margin-left: 220px;
+    margin-right: 150px
+}
+
+@media (max-width: 720px) {
+    .header-overele {
+        margin-left:125px;
+        margin-right: 100px
+    }
+}
+
+.header-overele div {
+    height: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    opacity: 0
+}
+
+.fileViewer .fullscreen {
+    width: 100%;
+    height: 100%;
+    margin: 0
+}
+
+.fileViewer .fullscreen .modal-content {
+    width: 100%;
+    height: 100%
+}
+
+.animate-header.ng-hide-add {
+    -ms-animation-name: fadeOut .5s;
+    animation: fadeOut .5s;
+    -moz-animation: fadeOut .5s;
+    -webkit-animation: fadeOut .5s;
+    display: block!important
+}
+
+.animate-header.ng-hide-remove {
+    -ms-animation-name: fadeIn .5s;
+    animation: fadeIn .5s;
+    -moz-animation: fadeIn .5s;
+    -webkit-animation: fadeIn .5s
+}
+
+.nav-arrow {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    overflow: hidden;
+    top: 45%;
+    z-index: 3;
+    line-height: 400px
+}
+
+.nav-arrow.prev {
+    left: 13px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAMAAABG8BK2AAAARVBMVEX///9GRkZQUFD29vZJSUns7OxNTU1VVVVaWlpfX19lZWVtbW13d3eAgICKioqVlZWgoKCqqqrBwcHPz8/e3t60tLRISEiLa9M8AAAAF3RSTlOZ19Oc1p7V0c/MysbDv7u3tLGppqGu1yRMirsAAACtSURBVFjD7dZZDoQgEARQUMB917n/Uad+7AuUiRXTdYAXAvQSPB6P55upqxjjQjMdlJFWRigdrSxQqppVLigps8rxA3OwSi5QtsCmgTLTSg9loJUJSksr6yNPvUNJJ6ucCcz+SD2ugU0LZaKVAUpPKzOUhlY2KCXTTAFzBZXT3Hcj8lL2b0R+sdWURoVbvxHpftaLRSaDzSmNqWkzXGSjsP1GZNu6dz+Px+N5O38g9wRLQPlNdAAAAABJRU5ErkJggg==) no-repeat
+}
+
+.nav-arrow.next {
+    right: 13px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAMAAABG8BK2AAAARVBMVEX///9GRkZQUFD29vZJSUns7OxNTU1VVVVaWlpfX19lZWVtbW13d3eAgICKioqVlZWgoKCqqqrBwcHPz8/e3t60tLRISEiLa9M8AAAAF3RSTlOZ19Oc1p7V0c/MysbDv7u3tLGppqGu1yRMirsAAACtSURBVFjD7dbZDYMwEIThNdjmviH9l5qRnQ6Gh1G0fwGfEL7WPM/z/qUthNC0vDPDGYxvgDPzTNvA2XgnRTgP71xgPhfvHHBy4p0VTmd8E5zR+Ho4y0vLvvPOHeGcvHOCiTfv7C+d0gVOb3wjnMn4Ojgrz6QM5+CdB0xW+Zryb0RWquwbkV1cz5TGCa/3jcjtV+5ikZehvlMar2Z9w0UmijLfiExbv9nP8zxPqy8eyQRLElEW3gAAAABJRU5ErkJggg==) no-repeat
+}
+
+.nav-arrow:hover {
+    background-color: #444
+}
+
+.popover-select-content {
+    position: absolute;
+    background-color: #fff;
+    padding: 6px 10px;
+    min-width: 50%;
+    max-width: 100%;
+    border: 1px solid rgba(0,0,0,.15);
+    top: 2px;
+    z-index: 1001
+}
+
+.auto-width {
+    width: auto;
+    display: inline-block;
+    min-width: 0
+}
+
+.dropdown-menu.popover-select-content {
+    left: auto;
+    display: block;
+    padding: 5px 0;
+    top: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1)
+}
+
+.break-word {
+    word-break: keep-all;
+    word-wrap: break-word
+}
+
+.im-title {
+    font-weight: bolder;
+    font-size: 125%
+}
+
+.im-header {
+    text-align: right
+}
+
+.im-header .clear {
+    color: #fff;
+    display: inline;
+    background: #737373;
+    padding: 2px 4px;
+    border-radius: 4px;
+    margin-right: -20px;
+    opacity: .6
+}
+
+.im-header .clear:hover {
+    color: #fff
+}
+
+.im-title a {
+    color: #fff;
+    opacity: .9
+}
+
+.im-title a:hover {
+    color: #fff
+}
+
+ul.messenger ul.im-msg {
+    margin: 0;
+    list-style-type: none
+}
+
+.im-msg .time {
+    font-size: 75%;
+    font-style: italic;
+    opacity: .7
+}
+
+.im-content {
+    padding-left: 10px
+}

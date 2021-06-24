@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MotiCloud</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta content="telephone=no" name="format-detection" />
+  <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href='css/libs.min.css?e95af477?t=e95af477'/>
+  <link rel="stylesheet" href='css/viewer.min.css?t=cc9036a5'/>
+</head>
+<body style="margin-right:0;">
+<div id="container"></div>
+</body>
+<script src='js/jquery-2.1.4.min.js'></script>
+<!--[if lte IE 11]>
+<script src='js/respond-1.4.2.min.js'></script>
+<script src='js/jquery-1.11.3.min.js'></script>
+<![endif]-->
+<script src='js/libs.min.js?t=9606a368'></script>
+<script>
+  var locale='zh_CN';
+  'ontouchmove' in document && document.write('<script src=\'/MotiCloud/viewer/js/jquery.ui.touch-punch.min.js\'><\/script>');
+</script>
+<script src='js/viewer.base.min.js?t=55e87f00b'></script>
+<script src='js/viewer.med.min.js?t=5fa214473'></script>
+
+<script src='js/track.js?v=451249357' id='DC8F8344-8FEB-46C3-87E4-3CC2B49B957F' name_zh='浏览轨迹' name_en='Browse Tracker' desc_zh='记录浏览过的区域' desc_en='Browse Tracker' review='false'></script>
+<script src='js/stain_separation_adjust.js?v=451249357' id='A3D39E3C-CA5F-E711-AFA7-005056B50E11' name_zh='染色调节' name_en='Stain Deconvolution' desc_zh='可针对HE染色成分进行独立的增强或削弱处理。' desc_en='For HE stain composition independent enhance or weaken processing.' review='false'></script>
+<script src='js/stereo_investigator.js?v=451249357' id='6389664A-CA5F-E711-AFA7-005056B50E11' name_zh='体视学计数' name_en='Stereology' desc_zh='通过采样计算选区细胞数量。' desc_en='Calculation cell number with the sample.' review='false'></script>
+<script src='js/exchange.js?v=451249357' id='E712329A-C94D-E811-B7D9-005056B50E11' name_zh='同步浏览' name_en='Browsing' desc_zh='同步浏览' desc_en='同步浏览' review='false'></script>
+<script src='js/similar_slide_search.js?v=451249357' id='630F8B63-CA5F-E711-AFA7-005056B50E11' name_zh='相似切片检索' name_en='Search By Image' desc_zh='搜索包含相似图像区域的切片' desc_en='Search contain similar area slice' review='false'></script>
+<script src='js/mpcc.js?v=451249357' id='D6C7AFC6-947E-E811-9AD9-005056B50E11' name_zh='远程会诊' name_en='MPCC' desc_zh='远程会诊' desc_en='MPCC' review='false'></script>
+<script type="text/javascript" charset="utf-8">
+  (''==1&&(window.WebSocket||window.MozWebSocket))&&document.write('<script src=\'js/leap.min.js\'><\/script>');
+  SlideViewerSupport.isAndroid&&document.write('<script src=\'js/hammer.min.js\'><\/script>');
+
+  var _wsPort=''
+  var apiPath="https://med.motic.com/MotiCloud/API",userId='39FDEB0B-2C8B-419D-A93D-0435F391231B',_slideAuth=0,token='',appCount=6;
+  var tokenDTO={"appId":"common","token":"0d9f806645598674f7a4be4e27b351af","se":1623910401764,"addits":{"userId":"39FDEB0B-2C8B-419D-A93D-0435F391231B"}};
+  //SlideViewerConfig.isClientImageAdjust=('Motic'!='Motic');
+  SlideViewerConfig.enableAdvanced=true;
+  SlideViewerConfig.enableRelevantAnnotation=true;
+  SlideViewerConfig.isReadOnly=false;
+  SlideViewerConfig.roiCapture=false;
+  SlideViewerConfig.logoUrl='/MoticKit/Utils/Logos/sv.png';
+  SlideViewerConfig.logoLink=''||'/';
+  $(document).ready(function(event) {
+    var viewer = new MMDSSlideViewer("container");
+    viewer.openSlide('9e971be8-219a-4c6e-aa13-43002ce1ad00');
+  });
+</script>
+<link rel="stylesheet" type="text/css"  href='css/m-kit.min.css?v=6'>
+
+<script src="js/angular.min.js?v=1.5.11"></script>
+<script src="js/angular-resource.min.js?v=1.5.11"></script>
+<!--<script src="/MoticKit/libs/angular.js/angular-animate.min.js?v=1.2.28"></script>-->
+<!--<script src='/MoticGallery/Medikal/js/bootstrap.min.js'></script>-->
+<!-- 	<script src='/MotiCloud/Medikal/js/jquery-plugin-collection.js'></script>-->
+<script src='js/scripts.min.js'></script>
+<script src="js/m-kit-jquery.min.js?v=16"></script>
+<script src="js/m-kit-angular.js?v=16"></script>
+
+<script type="text/javascript">
+  var vm = {
+    locale:"zh_CN",
+    ContextPath:'/MotiCloud'
+  }
+  vm.cloudUrl='/MotiCloud'
+  vm.apiPath=vm.ContextPath+"/API";
+  vm.token={"appId":"common","token":"0d9f806645598674f7a4be4e27b351af","se":1623910401764,"addits":{"userId":"39FDEB0B-2C8B-419D-A93D-0435F391231B"}}
+</script>
+<!--<script src='/MotiCloud/Medikal/js/custom.js' type="text/javascript"></script>-->
+
+
+
+<script  type="text/javascript" src='js/gallery.min.js?t=f541dfe1'></script>
+
+
+
+<script>
+  vm.vr={
+    0:{txt:'私有'},
+    1:{txt:'公开'},
+    2:{txt:'站内用户'},
+    //4:{txt:'visible-range.pay',sub:true},
+    3:{txt:'指定用户',sub:true}
+  }
+</script>
+
+<div class="ng-hide" ng-controller="taskInfoCtrl" ng-if1="role"  ng-hide="_init_hide" id="ng">
+  <div m-modal="editApp" >
+    <div m-modal-header>
+      共享
+    </div>
+    <div m-modal-body class="pb-0 pt-20">
+      <form class="mb-0">
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label><strong>可见范围</strong></label>
+            <div class="row">
+              <div class="col-sm-12 " ng-if="vm.editTask"  mg-visible-range="vm.editTask.visible" model="vm.vr" share="vm.editTask.share">
+              </div></div>
+          </div>
+        </div>
+
+      </form>
+    </div>
+    <div m-modal-footer>
+      <button class="btn btn-primary btn-theme-colored" ng-click="updateTask()" data-dismiss="modal">
+        保存
+      </button>
+      <button class="btn btn-default" data-dismiss="modal">
+        取消
+      </button>
+    </div>
+  </div>
+</div>
+</html>
