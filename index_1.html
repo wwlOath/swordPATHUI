@@ -21,7 +21,7 @@
 <script src='js/libs.min.js?t=9606a368'></script>
 <script>
   var locale='zh_CN';
-  'ontouchmove' in document && document.write('<script src=\'/MotiCloud/viewer/js/jquery.ui.touch-punch.min.js\'><\/script>');
+  'ontouchmove' in document && document.write('<script src=\'js/jquery.ui.touch-punch.min.js\'><\/script>');
 </script>
 <script src='js/viewer.base.min.js?t=55e87f00b'></script>
 <script src='js/viewer.med.min.js?t=5fa214473'></script>
@@ -48,13 +48,14 @@
   SlideViewerConfig.logoLink=''||'/';
   $(document).ready(function(event) {
     var viewer = new MMDSSlideViewer("container");
-    viewer.openSlide('9e971be8-219a-4c6e-aa13-43002ce1ad00');
+    //viewer.openSlide('9e971be8-219a-4c6e-aa13-43002ce1ad00');
+    viewer.openSlide('59201dd6-a75d-40c2-8732-2d9a9a64d3bb');
   });
 </script>
 <link rel="stylesheet" type="text/css"  href='css/m-kit.min.css?v=6'>
 
-<script src="js/angular.min.js?v=1.5.11"></script>
-<script src="js/angular-resource.min.js?v=1.5.11"></script>
+<!--<script src="js/angular.min.js?v=1.5.11"></script>
+<script src="js/angular-resource.min.js?v=1.5.11"></script>-->
 <!--<script src="/MoticKit/libs/angular.js/angular-animate.min.js?v=1.2.28"></script>-->
 <!--<script src='/MoticGallery/Medikal/js/bootstrap.min.js'></script>-->
 <!-- 	<script src='/MotiCloud/Medikal/js/jquery-plugin-collection.js'></script>-->
@@ -73,11 +74,7 @@
 </script>
 <!--<script src='/MotiCloud/Medikal/js/custom.js' type="text/javascript"></script>-->
 
-
-
 <script  type="text/javascript" src='js/gallery.min.js?t=f541dfe1'></script>
-
-
 
 <script>
   vm.vr={
@@ -87,7 +84,6 @@
     //4:{txt:'visible-range.pay',sub:true},
     3:{txt:'指定用户',sub:true}
   };
-  console.log('指定用户')
 </script>
 
 <div class="ng-hide" ng-controller="taskInfoCtrl" ng-if1="role"  ng-hide="_init_hide" id="ng">
